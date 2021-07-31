@@ -13,7 +13,7 @@ struct TEAMApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FlutterView()
         }
     }
 }

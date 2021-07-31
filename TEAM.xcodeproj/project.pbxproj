@@ -10,7 +10,6 @@
 		05FEFE8C439AA2F7EE6882D5 /* Pods_TEAM_TEAMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35489B2E4DAA8D479DD4E094 /* Pods_TEAM_TEAMUITests.framework */; };
 		1B3C10C8F3A40A7478EFEFE4 /* Pods_TEAM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCB35E74D6F93444F574EF1 /* Pods_TEAM.framework */; };
 		AE0EA89126B5C46E00DFD137 /* TEAMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA89026B5C46E00DFD137 /* TEAMApp.swift */; };
-		AE0EA89326B5C46E00DFD137 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA89226B5C46E00DFD137 /* ContentView.swift */; };
 		AE0EA89526B5C47000DFD137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA89426B5C47000DFD137 /* Assets.xcassets */; };
 		AE0EA89826B5C47000DFD137 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA89726B5C47000DFD137 /* Preview Assets.xcassets */; };
 		AE0EA8A326B5C47000DFD137 /* TEAMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8A226B5C47000DFD137 /* TEAMTests.swift */; };
@@ -47,7 +46,6 @@
 		9D9170BA6C92A588F024F8F5 /* Pods-TEAM-TEAMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEAM-TEAMUITests.debug.xcconfig"; path = "Target Support Files/Pods-TEAM-TEAMUITests/Pods-TEAM-TEAMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE0EA88D26B5C46E00DFD137 /* TEAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0EA89026B5C46E00DFD137 /* TEAMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEAMApp.swift; sourceTree = "<group>"; };
-		AE0EA89226B5C46E00DFD137 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE0EA89426B5C47000DFD137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE0EA89726B5C47000DFD137 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE0EA89926B5C47000DFD137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */,
 				AE0EA89026B5C46E00DFD137 /* TEAMApp.swift */,
 				AE0EA8D126B5DF3A00DFD137 /* FlutterView.swift */,
-				AE0EA89226B5C46E00DFD137 /* ContentView.swift */,
 				AE0EA89426B5C47000DFD137 /* Assets.xcassets */,
 				AE0EA89926B5C47000DFD137 /* Info.plist */,
 				AE0EA89626B5C47000DFD137 /* Preview Content */,
@@ -426,7 +423,6 @@
 			files = (
 				AE0EA8D226B5DF3A00DFD137 /* FlutterView.swift in Sources */,
 				AE0EA8CA26B5D43100DFD137 /* AppDelegate.swift in Sources */,
-				AE0EA89326B5C46E00DFD137 /* ContentView.swift in Sources */,
 				AE0EA89126B5C46E00DFD137 /* TEAMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
