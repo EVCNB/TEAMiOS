@@ -6,14 +6,21 @@
 //
 
 import SwiftUI
-
+import Flutter
 @main
 struct TEAMApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @Environment(\.scenePhase) private var scenePhase
+    @StateObject var flutterEngine = FlutterEngineEnvironment()
     
     var body: some Scene {
         WindowGroup {
-            FlutterView()
+            FlutterView().environmentObject(flutterEngine)
+        }
+        .onChange(of: scenePhase) { (newScenePhase) in
+            if newScenePhase == .active {
+                flutterEngine.engine = appDelegate.flutterEngine
+            }
         }
     }
 }

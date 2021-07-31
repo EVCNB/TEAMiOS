@@ -13,8 +13,11 @@ struct FlutterView: UIViewControllerRepresentable {
     
     typealias UIViewControllerType = FlutterViewController
     
+    @EnvironmentObject var flutterEngine: FlutterEngineEnvironment
+    
     func makeUIViewController(context: Context) -> FlutterViewController {
-        let vc = FlutterViewController()
+        let flutterEngine = self.flutterEngine
+        let vc = FlutterViewController(engine: flutterEngine.engine!, nibName: nil, bundle: nil)
         return vc
     }
     

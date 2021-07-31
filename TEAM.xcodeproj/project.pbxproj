@@ -16,6 +16,7 @@
 		AE0EA8AE26B5C47000DFD137 /* TEAMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8AD26B5C47000DFD137 /* TEAMUITests.swift */; };
 		AE0EA8CA26B5D43100DFD137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */; };
 		AE0EA8D226B5DF3A00DFD137 /* FlutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8D126B5DF3A00DFD137 /* FlutterView.swift */; };
+		AE8AF40D26B5F746002247FD /* FlutterEngineEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8AF40C26B5F746002247FD /* FlutterEngineEnvironment.swift */; };
 		B0C1E05CEE6F88B30F0366D1 /* Pods_TEAMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1270722D2C431F99233805A /* Pods_TEAMTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		AE0EA8AF26B5C47000DFD137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE0EA8D126B5DF3A00DFD137 /* FlutterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterView.swift; sourceTree = "<group>"; };
+		AE8AF40C26B5F746002247FD /* FlutterEngineEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterEngineEnvironment.swift; sourceTree = "<group>"; };
 		B1270722D2C431F99233805A /* Pods_TEAMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TEAMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B770354C96A2C19E900882BC /* Pods-TEAMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEAMTests.debug.xcconfig"; path = "Target Support Files/Pods-TEAMTests/Pods-TEAMTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 		AE0EA88F26B5C46E00DFD137 /* TEAM */ = {
 			isa = PBXGroup;
 			children = (
+				AE8AF40C26B5F746002247FD /* FlutterEngineEnvironment.swift */,
 				AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */,
 				AE0EA89026B5C46E00DFD137 /* TEAMApp.swift */,
 				AE0EA8D126B5DF3A00DFD137 /* FlutterView.swift */,
@@ -423,6 +426,7 @@
 			files = (
 				AE0EA8D226B5DF3A00DFD137 /* FlutterView.swift in Sources */,
 				AE0EA8CA26B5D43100DFD137 /* AppDelegate.swift in Sources */,
+				AE8AF40D26B5F746002247FD /* FlutterEngineEnvironment.swift in Sources */,
 				AE0EA89126B5C46E00DFD137 /* TEAMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
