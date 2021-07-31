@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isShowingFlutterView = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Button(action: {
+                    self.isShowingFlutterView.toggle()
+        }) {
+                    Text("Tap Me")
+        }
+        .sheet(isPresented: $isShowingFlutterView) {
+            FlutterView()
+        }
     }
 }
 
