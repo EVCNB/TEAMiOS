@@ -13,10 +13,13 @@ fi
 
 new_project_version=$((current_project_version + 1))
 
-CURRENT_PROJECT_VERSION="${new_project_version}" xcodebuild -project TEAM.xcodeproj -scheme TEAM -sdk iphoneos -configuration Release archive -archivePath "$(pwd)/build/TEAM.xcarchive"
+sed -i TEAM.xcodeproj/project.pbxproj "s/CURRENT_PROJECT_VERSION = [0-9]*;/CURRENT_PROJECT_VERSION = ${new_project_version};/"
+
+xcodebuild -project TEAM.xcodeproj -scheme TEAM -sdk iphoneos -configuration Release archive -archivePath "$(pwd)/build/TEAM.xcarchive"
 
 xcodebuild -exportArchive -archivePath "$(pwd)/build/TEAM.xcarchive" -exportOptionsPlist exportOptions.plist -exportPath "$(pwd)/build"
 
 git config -f versions.gitconfig "team.v${app_version}.b${new_project_version}" "$(git rev-parse --short HEAD)"
 
+git add TEAM.xcodeproj/project.pbxproj
 git add versions.gitconfig
