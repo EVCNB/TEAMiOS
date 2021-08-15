@@ -13,7 +13,7 @@ fi
 
 new_project_version=$((current_project_version + 1))
 
-sed -i TEAM.xcodeproj/project.pbxproj "s/CURRENT_PROJECT_VERSION = [0-9]*;/CURRENT_PROJECT_VERSION = ${new_project_version};/"
+sed -i.bak "s/CURRENT_PROJECT_VERSION = [0-9]*;/CURRENT_PROJECT_VERSION = ${new_project_version};/" TEAM.xcodeproj/project.pbxproj 
 
 xcodebuild -project TEAM.xcodeproj -scheme TEAM -sdk iphoneos -configuration Release archive -archivePath "$(pwd)/build/TEAM.xcarchive"
 
