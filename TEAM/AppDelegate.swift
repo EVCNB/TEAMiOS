@@ -5,12 +5,13 @@
 //  Created by Mark Adamcin on 7/31/21.
 //
 
+
 import UIKit
 import Flutter
 // Used to connect plugins (only if you have plugins with iOS platform code).
 import FlutterPluginRegistrant
 
-class AppDelegate: FlutterAppDelegate { // More on the FlutterAppDelegate.
+class AppDelegate: FlutterAppDelegate, ObservableObject { // More on the FlutterAppDelegate.
     
     lazy var flutterEngine = FlutterEngine(name: "team-flutter")
     

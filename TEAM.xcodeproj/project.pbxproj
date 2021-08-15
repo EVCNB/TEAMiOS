@@ -14,7 +14,6 @@
 		AE0EA8AE26B5C47000DFD137 /* TEAMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8AD26B5C47000DFD137 /* TEAMUITests.swift */; };
 		AE0EA8CA26B5D43100DFD137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */; };
 		AE0EA8D226B5DF3A00DFD137 /* FlutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8D126B5DF3A00DFD137 /* FlutterView.swift */; };
-		AE8AF40D26B5F746002247FD /* FlutterEngineEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8AF40C26B5F746002247FD /* FlutterEngineEnvironment.swift */; };
 		AEAF45A826C83B6E009D72EB /* flutter_sms.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A326C83B6E009D72EB /* flutter_sms.xcframework */; };
 		AEAF45A926C83B6E009D72EB /* flutter_sms.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A326C83B6E009D72EB /* flutter_sms.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEAF45AA26C83B6E009D72EB /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A426C83B6E009D72EB /* Flutter.xcframework */; };
@@ -76,7 +75,7 @@
 		AE0EA8AF26B5C47000DFD137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE0EA8D126B5DF3A00DFD137 /* FlutterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterView.swift; sourceTree = "<group>"; };
-		AE8AF40C26B5F746002247FD /* FlutterEngineEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterEngineEnvironment.swift; sourceTree = "<group>"; };
+		AE3EBA8F26C86E2C006A48C4 /* TEAM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TEAM.entitlements; sourceTree = "<group>"; };
 		AEAF45A326C83B6E009D72EB /* flutter_sms.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = flutter_sms.xcframework; path = "Flutter/$(CONFIGURATION)/flutter_sms.xcframework"; sourceTree = "<group>"; };
 		AEAF45A426C83B6E009D72EB /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "Flutter/$(CONFIGURATION)/Flutter.xcframework"; sourceTree = "<group>"; };
 		AEAF45A526C83B6E009D72EB /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "Flutter/$(CONFIGURATION)/App.xcframework"; sourceTree = "<group>"; };
@@ -140,7 +139,7 @@
 		AE0EA88F26B5C46E00DFD137 /* TEAM */ = {
 			isa = PBXGroup;
 			children = (
-				AE8AF40C26B5F746002247FD /* FlutterEngineEnvironment.swift */,
+				AE3EBA8F26C86E2C006A48C4 /* TEAM.entitlements */,
 				AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */,
 				AE0EA89026B5C46E00DFD137 /* TEAMApp.swift */,
 				AE0EA8D126B5DF3A00DFD137 /* FlutterView.swift */,
@@ -321,7 +320,6 @@
 			files = (
 				AE0EA8D226B5DF3A00DFD137 /* FlutterView.swift in Sources */,
 				AE0EA8CA26B5D43100DFD137 /* AppDelegate.swift in Sources */,
-				AE8AF40D26B5F746002247FD /* FlutterEngineEnvironment.swift in Sources */,
 				AE0EA89126B5C46E00DFD137 /* TEAMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,8 +477,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TEAM/TEAM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"TEAM/Preview Content\"";
 				DEVELOPMENT_TEAM = X4L3JSUC6J;
 				ENABLE_PREVIEWS = YES;
@@ -504,8 +503,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TEAM/TEAM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"TEAM/Preview Content\"";
 				DEVELOPMENT_TEAM = X4L3JSUC6J;
 				ENABLE_PREVIEWS = YES;

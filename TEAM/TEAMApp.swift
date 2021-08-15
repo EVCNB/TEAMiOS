@@ -7,20 +7,16 @@
 
 import SwiftUI
 import Flutter
+
 @main
 struct TEAMApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     @Environment(\.scenePhase) private var scenePhase
-    @StateObject var flutterEngine = FlutterEngineEnvironment()
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
         WindowGroup {
-            FlutterView().environmentObject(flutterEngine)
-        }
-        .onChange(of: scenePhase) { (newScenePhase) in
-            if newScenePhase == .active {
-                flutterEngine.engine = appDelegate.flutterEngine
-            }
+            FlutterView().environmentObject(self.appDelegate)
         }
     }
 }
