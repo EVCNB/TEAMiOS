@@ -2,6 +2,21 @@
 # https://rderik.com/blog/automating-build-and-testflight-upload-for-simple-ios-apps/#automating-the-build-version-increase
 set -eo pipefail
 readonly basedir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+commit=""
+
+while [[ "$#" -gt 0 ]]; do
+    opt="$1"
+    shift
+    case "$opt" in
+    --commit)
+    commit="true";;
+    *)
+    echo "unknown option $opt" >&2
+    exit 1;;
+    esac
+done
+
 pushd "${basedir}"
 
 app_version="$(plutil -extract CFBundleShortVersionString xml1 -o - TEAM/Info.plist | xmllint --xpath "//string/text()" -)"
@@ -23,3 +38,9 @@ git config -f versions.gitconfig "team.v${app_version}.b${new_project_version}" 
 
 git add TEAM.xcodeproj/project.pbxproj
 git add versions.gitconfig
+
+if [[ "$commit" == "true" ]]; then
+    git commit -m "uploaded TEAM v${app_version} b${new_project_version}"
+    git tag "team.v${app_version}.b${new_project_version}"
+    git push --tags
+fi
