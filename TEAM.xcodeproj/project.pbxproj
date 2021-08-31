@@ -69,11 +69,8 @@
 		AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE0EA8D126B5DF3A00DFD137 /* FlutterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterView.swift; sourceTree = "<group>"; };
 		AE3EBA8F26C86E2C006A48C4 /* TEAM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TEAM.entitlements; sourceTree = "<group>"; };
-		AEAF45A326C83B6E009D72EB /* flutter_sms.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = flutter_sms.xcframework; path = "Flutter/$(CONFIGURATION)/flutter_sms.xcframework"; sourceTree = "<group>"; };
 		AEAF45A426C83B6E009D72EB /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "Flutter/$(CONFIGURATION)/Flutter.xcframework"; sourceTree = "<group>"; };
 		AEAF45A526C83B6E009D72EB /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "Flutter/$(CONFIGURATION)/App.xcframework"; sourceTree = "<group>"; };
-		AEAF45A626C83B6E009D72EB /* url_launcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = url_launcher.xcframework; path = "Flutter/$(CONFIGURATION)/url_launcher.xcframework"; sourceTree = "<group>"; };
-		AEAF45A726C83B6E009D72EB /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = "Flutter/$(CONFIGURATION)/FlutterPluginRegistrant.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,10 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				AEAF45A526C83B6E009D72EB /* App.xcframework */,
-				AEAF45A326C83B6E009D72EB /* flutter_sms.xcframework */,
 				AEAF45A426C83B6E009D72EB /* Flutter.xcframework */,
-				AEAF45A726C83B6E009D72EB /* FlutterPluginRegistrant.xcframework */,
-				AEAF45A626C83B6E009D72EB /* url_launcher.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
