@@ -14,15 +14,10 @@
 		AE0EA8AE26B5C47000DFD137 /* TEAMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8AD26B5C47000DFD137 /* TEAMUITests.swift */; };
 		AE0EA8CA26B5D43100DFD137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */; };
 		AE0EA8D226B5DF3A00DFD137 /* FlutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8D126B5DF3A00DFD137 /* FlutterView.swift */; };
-		AEAF45A826C83B6E009D72EB /* flutter_sms.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A326C83B6E009D72EB /* flutter_sms.xcframework */; };
-		AEAF45A926C83B6E009D72EB /* flutter_sms.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A326C83B6E009D72EB /* flutter_sms.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEAF45AA26C83B6E009D72EB /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A426C83B6E009D72EB /* Flutter.xcframework */; };
 		AEAF45AB26C83B6E009D72EB /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A426C83B6E009D72EB /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEAF45AC26C83B6E009D72EB /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A526C83B6E009D72EB /* App.xcframework */; };
 		AEAF45AD26C83B6E009D72EB /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A526C83B6E009D72EB /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AEAF45AE26C83B6E009D72EB /* url_launcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A626C83B6E009D72EB /* url_launcher.xcframework */; };
-		AEAF45AF26C83B6E009D72EB /* url_launcher.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A626C83B6E009D72EB /* url_launcher.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AEAF45B026C83B6E009D72EB /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A726C83B6E009D72EB /* FlutterPluginRegistrant.xcframework */; };
 		AEAF45B326C83B81009D72EB /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A526C83B6E009D72EB /* App.xcframework */; };
 		AEAF45B426C83B81009D72EB /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A526C83B6E009D72EB /* App.xcframework */; };
 /* End PBXBuildFile section */
@@ -52,9 +47,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AEAF45AB26C83B6E009D72EB /* Flutter.xcframework in Embed Frameworks */,
-				AEAF45A926C83B6E009D72EB /* flutter_sms.xcframework in Embed Frameworks */,
 				AEAF45AD26C83B6E009D72EB /* App.xcframework in Embed Frameworks */,
-				AEAF45AF26C83B6E009D72EB /* url_launcher.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,10 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEAF45AA26C83B6E009D72EB /* Flutter.xcframework in Frameworks */,
-				AEAF45A826C83B6E009D72EB /* flutter_sms.xcframework in Frameworks */,
 				AEAF45AC26C83B6E009D72EB /* App.xcframework in Frameworks */,
-				AEAF45B026C83B6E009D72EB /* FlutterPluginRegistrant.xcframework in Frameworks */,
-				AEAF45AE26C83B6E009D72EB /* url_launcher.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TEAM/TEAM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_ASSET_PATHS = "\"TEAM/Preview Content\"";
 				DEVELOPMENT_TEAM = X4L3JSUC6J;
 				ENABLE_PREVIEWS = YES;
@@ -505,7 +495,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TEAM/TEAM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_ASSET_PATHS = "\"TEAM/Preview Content\"";
 				DEVELOPMENT_TEAM = X4L3JSUC6J;
 				ENABLE_PREVIEWS = YES;

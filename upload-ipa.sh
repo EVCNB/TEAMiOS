@@ -3,14 +3,14 @@
 set -eo pipefail
 readonly basedir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-commit=""
+commit="true"
 
 while [[ "$#" -gt 0 ]]; do
     opt="$1"
     shift
     case "$opt" in
-    --commit)
-    commit="true";;
+    --no-commit)
+    commit="false";;
     *)
     echo "unknown option $opt" >&2
     exit 1;;
