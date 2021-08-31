@@ -16,7 +16,9 @@ struct TEAMApp: App {
     
     var body: some Scene {
         WindowGroup {
-            FlutterView().environmentObject(self.appDelegate)
+            FlutterView()
+                .ignoresSafeArea(/*@START_MENU_TOKEN@*/.keyboard/*@END_MENU_TOKEN@*/, edges: .bottom)
+                .environmentObject(self.appDelegate)
         }
     }
 }
