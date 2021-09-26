@@ -10,15 +10,15 @@ if ! command -v pyenv || ! pyenv help virtualenv-init; then
   exit 1
 fi
 
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-if ! pyenv which pbxproj; then
-  pyenv exec pip install pbxproj
-fi
-
 projcmd() {
-  pyenv exec pbxproj "$@"
+  eval "$(pyenv init --path "${basedir}")"
+  if ! pyenv which pbxproj; then
+    pyenv exec pip install pbxproj
+  fi
+  
+  if ! pyenv exec pbxproj "$@"; then
+    exit 0
+  fi
 }
 
 cleanframeworks() {
@@ -69,9 +69,9 @@ linkframework() {
   fwname="$1"
   pushd "${basedir}"
   if find Flutter -name "${fwname}" -print0 | xargs -0 "$0" is_embeddable; then
-    "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/$(CONFIGURATION)/'"${fwname}" --target TEAM -s
+    "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/$(CONFIGURATION)/'"${fwname}" --target TEAM --parent Frameworks -s
   else
-    "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/$(CONFIGURATION)/'"${fwname}" --target TEAM -E
+    "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/$(CONFIGURATION)/'"${fwname}" --target TEAM --parent Frameworks -E
   fi
   popd
 }

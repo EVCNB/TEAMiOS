@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1D4529901313729C5F0C61 /* flutter_email_sender.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6846FBBA42CB3199EE8892 /* flutter_email_sender.xcframework */; };
+		731E4BA68217D0DA83A64361 /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BE43D2AD84F1D8BA89C641 /* FlutterPluginRegistrant.xcframework */; };
 		AE0EA89126B5C46E00DFD137 /* TEAMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA89026B5C46E00DFD137 /* TEAMApp.swift */; };
 		AE0EA89526B5C47000DFD137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA89426B5C47000DFD137 /* Assets.xcassets */; };
 		AE0EA89826B5C47000DFD137 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA89726B5C47000DFD137 /* Preview Assets.xcassets */; };
@@ -20,6 +22,7 @@
 		AEAF45AD26C83B6E009D72EB /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A526C83B6E009D72EB /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEAF45B326C83B81009D72EB /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A526C83B6E009D72EB /* App.xcframework */; };
 		AEAF45B426C83B81009D72EB /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A526C83B6E009D72EB /* App.xcframework */; };
+		B6444964844AE1B703E18AC2 /* flutter_email_sender.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE6846FBBA42CB3199EE8892 /* flutter_email_sender.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,7 @@
 			files = (
 				AEAF45AB26C83B6E009D72EB /* Flutter.xcframework in Embed Frameworks */,
 				AEAF45AD26C83B6E009D72EB /* App.xcframework in Embed Frameworks */,
+				B6444964844AE1B703E18AC2 /* flutter_email_sender.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +75,8 @@
 		AE3EBA8F26C86E2C006A48C4 /* TEAM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TEAM.entitlements; sourceTree = "<group>"; };
 		AEAF45A426C83B6E009D72EB /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "Flutter/$(CONFIGURATION)/Flutter.xcframework"; sourceTree = "<group>"; };
 		AEAF45A526C83B6E009D72EB /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "Flutter/$(CONFIGURATION)/App.xcframework"; sourceTree = "<group>"; };
+		C6BE43D2AD84F1D8BA89C641 /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = "Flutter/$(CONFIGURATION)/FlutterPluginRegistrant.xcframework"; sourceTree = SOURCE_ROOT; };
+		CE6846FBBA42CB3199EE8892 /* flutter_email_sender.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = flutter_email_sender.xcframework; path = "Flutter/$(CONFIGURATION)/flutter_email_sender.xcframework"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,8 @@
 			files = (
 				AEAF45AA26C83B6E009D72EB /* Flutter.xcframework in Frameworks */,
 				AEAF45AC26C83B6E009D72EB /* App.xcframework in Frameworks */,
+				731E4BA68217D0DA83A64361 /* FlutterPluginRegistrant.xcframework in Frameworks */,
+				6E1D4529901313729C5F0C61 /* flutter_email_sender.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +176,8 @@
 			children = (
 				AEAF45A526C83B6E009D72EB /* App.xcframework */,
 				AEAF45A426C83B6E009D72EB /* Flutter.xcframework */,
+				C6BE43D2AD84F1D8BA89C641 /* FlutterPluginRegistrant.xcframework */,
+				CE6846FBBA42CB3199EE8892 /* flutter_email_sender.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -474,6 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"$(inherited) @executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.adamcin.TEAM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,6 +511,7 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"$(inherited) @executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.adamcin.TEAM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
