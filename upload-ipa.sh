@@ -34,7 +34,7 @@ xcodebuild -project TEAM.xcodeproj -scheme TEAM -sdk iphoneos -configuration Rel
 
 xcodebuild -exportArchive -archivePath "$(pwd)/build/TEAM.xcarchive" -exportOptionsPlist exportOptions.plist -exportPath "$(pwd)/build"
 
-git config -f versions.gitconfig "team.v${app_version}.b${new_project_version}" "$(git rev-parse --short HEAD)"
+git config -f versions.gitconfig "team.v${app_version}.b${new_project_version}" "$(git -C ../TEAM rev-parse --short HEAD)"
 
 git add TEAM.xcodeproj/project.pbxproj
 git add versions.gitconfig
