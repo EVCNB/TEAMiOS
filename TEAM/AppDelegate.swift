@@ -9,7 +9,9 @@
 import UIKit
 import Flutter
 // Used to connect plugins (only if you have plugins with iOS platform code).
-//import FlutterPluginRegistrant
+#if canImport(FlutterPluginRegistrant)
+import FlutterPluginRegistrant
+#endif
 
 class AppDelegate: FlutterAppDelegate, ObservableObject { // More on the FlutterAppDelegate.
     
@@ -19,7 +21,9 @@ class AppDelegate: FlutterAppDelegate, ObservableObject { // More on the Flutter
         // Runs the default Dart entrypoint with a default Flutter route.
         flutterEngine.run()
         // Used to connect plugins (only if you have plugins with iOS platform code).
-        //GeneratedPluginRegistrant.register(with: self.flutterEngine);
+        #if canImport(FlutterPluginRegistrant)
+        GeneratedPluginRegistrant.register(with: self.flutterEngine);
+        #endif
         return super.application(application, didFinishLaunchingWithOptions: launchOptions);
     }
 }
