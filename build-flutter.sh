@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eo pipefail
 readonly basedir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-if ! command -v pyenv || ! pyenv help virtualenv-init; then
+if ! command -v pyenv || ! pyenv help virtualenv-init 2>&1 >>/dev/null ; then
   echo "Please install pyenv and pyenv-virtualenv" >&2
   echo "" >&2
   echo "  brew install pyenv" >&2
