@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  TEAM
+//
+//  Created by Mark Adamcin on 3/18/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+MAIN_APP_DISPLAY_NAME = TEAM
+MAIN_APP_BUNDLE_IDENTIFIER = net.adamcin.TEAM
+#include? "../TEAMConfigOverride.xcconfig"

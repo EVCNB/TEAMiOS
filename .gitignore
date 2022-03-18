@@ -3,4 +3,6 @@ build/
 Pods/
 Flutter/
 TEAM.xcodeproj/project.xcworkspace/xcuserdata/
+*.pbxproj.bak
 .DS_Store
+TEAMConfigOverride.xcconfig
