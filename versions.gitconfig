@@ -1,4 +1,4 @@
-[team "v1.0"]
+[TEAM "v1.0"]
 	b1 = 98ff254
 	b2 = 98ff254
 	b3 = 98ff254
@@ -29,3 +29,6 @@
 	b28 = ab09db0
 	b29 = 2a14657
 	b30 = c3b7dcd
+
+[BlueTEAM "v1.0"]
+    b0 = c3b7dcd

@@ -4,3 +4,4 @@ Pods/
 Flutter/
 TEAM.xcodeproj/project.xcworkspace/xcuserdata/
 .DS_Store
+TEAMConfigOverride.xcconfig
