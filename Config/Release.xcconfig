@@ -1,0 +1,2 @@
+#include "TEAMConfig.xcconfig"
+#include? "../Pods/Target Support Files/Pods-TEAM/Pods-TEAM.release.xcconfig"
