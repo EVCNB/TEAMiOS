@@ -23,10 +23,11 @@ projcmd() {
 
 cleanframeworks() {
   pushd "${basedir}"
+  #  -e 's@/Debug/@/$(CONFIGURATION)/@g' \
   find Flutter -name '*.xcframework' | sed \
-    -e 's@/Debug/@/$(CONFIGURATION)/@g' \
-    -e 's@/Profile/@/$(CONFIGURATION)/@g' \
-    -e 's@/Release/@/$(CONFIGURATION)/@g' \
+    -e 's@/Debug/@/Release/@g' \
+    -e 's@/Profile/@/Release/@g' \
+    -e 's@/Release/@/Release/@g' \
    | sort -u | xargs -L 1 "$0" projcmd file -D "${basedir}/TEAM.xcodeproj"
   popd
   rm -rf Flutter/*
@@ -37,6 +38,11 @@ buildframeworks() {
   #pushd "${basedir}/../teamtest"
   SWIFT_VERSION=5.0 flutter build ios-framework -v --no-cocoapods --no-obfuscate --no-pub --no-debug --no-profile --output="${basedir}/Flutter"
   popd
+
+  # remove these for now
+  find "${basedir}/Flutter" -name 'AppAuth.xcframework' -print0 | xargs -0 rm -rf
+  find "${basedir}/Flutter" -name 'GTMAppAuth.xcframework'  -print0 | xargs -0 rm -rf
+  find "${basedir}/Flutter" -name 'GTMSessionFetcher.xcframework'  -print0 | xargs -0 rm -rf
 }
 
 linkframeworks() {

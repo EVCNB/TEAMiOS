@@ -27,6 +27,11 @@ done
 
 pushd "${basedir}"
 
+
+find Flutter -name 'AppAuth.xcframework' -print0 | xargs -0 rm -rf
+find Flutter -name 'GTMAppAuth.xcframework'  -print0 | xargs -0 rm -rf
+find Flutter -name 'GTMSessionFetcher.xcframework'  -print0 | xargs -0 rm -rf
+
 cat > ./TEAMConfigOverride.xcconfig <<EOXCC
 MAIN_APP_BUNDLE_IDENTIFIER = net.adamcin.${bundle_name}
 MAIN_APP_DISPLAY_NAME = ${display_name}
@@ -44,7 +49,7 @@ new_project_version=$((current_project_version + 1))
 
 sed -i.bak "s/CURRENT_PROJECT_VERSION = [0-9]*;/CURRENT_PROJECT_VERSION = ${new_project_version};/" TEAM.xcodeproj/project.pbxproj 
 
-xcodebuild -project TEAM.xcodeproj -scheme TEAM -sdk iphoneos -configuration Release archive -archivePath "$(pwd)/build/TEAM.xcarchive" -allowProvisioningUpdates
+xcodebuild -workspace TEAM.xcworkspace -scheme TEAM -sdk iphoneos -configuration Release archive -archivePath "$(pwd)/build/TEAM.xcarchive" -allowProvisioningUpdates
 
 xcodebuild -exportArchive -archivePath "$(pwd)/build/TEAM.xcarchive" -exportOptionsPlist exportOptions.plist -exportPath "$(pwd)/build" -allowProvisioningUpdates
 
