@@ -35,7 +35,7 @@ cleanframeworks() {
 buildframeworks() {
   pushd "${basedir}/../TEAM"
   #pushd "${basedir}/../teamtest"
-  SWIFT_VERSION=5.0 flutter build ios-framework -v --no-cocoapods --no-pub --output="${basedir}/Flutter"
+  SWIFT_VERSION=5.0 flutter build ios-framework -v --no-cocoapods --no-obfuscate --no-pub --no-debug --no-profile --output="${basedir}/Flutter"
   popd
 }
 
@@ -69,9 +69,11 @@ linkframework() {
   fwname="$1"
   pushd "${basedir}"
   if find Flutter -name "${fwname}" -print0 | xargs -0 "$0" is_embeddable; then
-    "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/$(CONFIGURATION)/'"${fwname}" --target TEAM --parent Frameworks -s
+    # "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/$(CONFIGURATION)/'"${fwname}" --target TEAM --parent Frameworks -s
+    "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/Release/'"${fwname}" --target TEAM --parent Frameworks -s
   else
-    "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/$(CONFIGURATION)/'"${fwname}" --target TEAM --parent Frameworks -E
+    # "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/$(CONFIGURATION)/'"${fwname}" --target TEAM --parent Frameworks -E
+    "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/Release/'"${fwname}" --target TEAM --parent Frameworks -E
   fi
   popd
 }

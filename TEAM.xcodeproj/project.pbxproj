@@ -44,6 +44,8 @@
 		AE0EA8AE26B5C47000DFD137 /* TEAMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8AD26B5C47000DFD137 /* TEAMUITests.swift */; };
 		AE0EA8CA26B5D43100DFD137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */; };
 		AE0EA8D226B5DF3A00DFD137 /* FlutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8D126B5DF3A00DFD137 /* FlutterView.swift */; };
+		AEA273A127E586FD0083B20A /* google_sign_in.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785F4CA59F466CB8A951B99B /* google_sign_in.xcframework */; };
+		AEA273AD27E657CF0083B20A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEA273AC27E657CE0083B20A /* GoogleService-Info.plist */; };
 		AEA8212527E53DCA00F87765 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AEA8212427E53DCA00F87765 /* Config.xcconfig */; };
 		AEAF45AA26C83B6E009D72EB /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A426C83B6E009D72EB /* Flutter.xcframework */; };
 		AEAF45AB26C83B6E009D72EB /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF45A426C83B6E009D72EB /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -56,7 +58,6 @@
 		CA1D4E20897E6D72F91D6B93 /* FBLPromises.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7CAC40E0A29F5D44C0E69E0E /* FBLPromises.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CD854D6EAC72EC9B37434D2F /* path_provider_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01B48AB9696042DF331B304 /* path_provider_ios.xcframework */; };
 		D5FE4B618C0E45EBB7D2C672 /* firebase_auth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B04498986CB8B8116721AC /* firebase_auth.xcframework */; };
-		D83746A580479E6374937E48 /* google_sign_in.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785F4CA59F466CB8A951B99B /* google_sign_in.xcframework */; };
 		E8C24B6990B26D203975F5C5 /* absl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58114D0FB368FF2BD8F77074 /* absl.xcframework */; };
 		EA4D4BC798D20191C98653E6 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FB4574962C126593D640CB /* nanopb.xcframework */; };
 		EE57461AA3FB7C7402B67AF7 /* nanopb.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 56FB4574962C126593D640CB /* nanopb.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -130,7 +131,7 @@
 		912E4E39B4663D7F1BEE919F /* FirebaseFirestore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseFirestore.xcframework; path = "Flutter/$(CONFIGURATION)/FirebaseFirestore.xcframework"; sourceTree = SOURCE_ROOT; };
 		9F334B658B3BFC9082627B27 /* FirebaseCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseCore.xcframework; path = "Flutter/$(CONFIGURATION)/FirebaseCore.xcframework"; sourceTree = SOURCE_ROOT; };
 		A6D64CA28AFED6601987E849 /* grpcpp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = grpcpp.xcframework; path = "Flutter/$(CONFIGURATION)/grpcpp.xcframework"; sourceTree = SOURCE_ROOT; };
-		AE0EA88D26B5C46E00DFD137 /* TEAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0EA88D26B5C46E00DFD137 /* TEAM Blue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TEAM Blue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0EA89026B5C46E00DFD137 /* TEAMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEAMApp.swift; sourceTree = "<group>"; };
 		AE0EA89426B5C47000DFD137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE0EA89726B5C47000DFD137 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 		AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE0EA8D126B5DF3A00DFD137 /* FlutterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterView.swift; sourceTree = "<group>"; };
 		AE3EBA8F26C86E2C006A48C4 /* TEAM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TEAM.entitlements; sourceTree = "<group>"; };
+		AEA273AC27E657CE0083B20A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AEA8212427E53DCA00F87765 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		AEAF45A426C83B6E009D72EB /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "Flutter/$(CONFIGURATION)/Flutter.xcframework"; sourceTree = "<group>"; };
 		AEAF45A526C83B6E009D72EB /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "Flutter/$(CONFIGURATION)/App.xcframework"; sourceTree = "<group>"; };
@@ -174,13 +176,13 @@
 				883E436A908245DECB5F6A8D /* FirebaseFirestore.xcframework in Frameworks */,
 				1E594901A58C5F5D85A766A1 /* GTMAppAuth.xcframework in Frameworks */,
 				9E734F4E9A683FE71D94CD41 /* GTMSessionFetcher.xcframework in Frameworks */,
+				AEA273A127E586FD0083B20A /* google_sign_in.xcframework in Frameworks */,
 				1FDD4D9EB7DC799047D661F7 /* GoogleDataTransport.xcframework in Frameworks */,
 				8A584D608007148F8C50DD05 /* GoogleUtilities.xcframework in Frameworks */,
 				E8C24B6990B26D203975F5C5 /* absl.xcframework in Frameworks */,
 				34B6420CBD673D01D19E602D /* cloud_firestore.xcframework in Frameworks */,
 				D5FE4B618C0E45EBB7D2C672 /* firebase_auth.xcframework in Frameworks */,
 				0FD94AAF84DCADA70D435367 /* firebase_core.xcframework in Frameworks */,
-				D83746A580479E6374937E48 /* google_sign_in.xcframework in Frameworks */,
 				9E434C24BCAAED23CAB73C27 /* grpc.xcframework in Frameworks */,
 				8353495F94E31CA1C687DE49 /* grpcpp.xcframework in Frameworks */,
 				A30C4887B458B165E4420BB0 /* leveldb.xcframework in Frameworks */,
@@ -223,7 +225,7 @@
 		AE0EA88E26B5C46E00DFD137 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE0EA88D26B5C46E00DFD137 /* TEAM.app */,
+				AE0EA88D26B5C46E00DFD137 /* TEAM Blue.app */,
 				AE0EA89E26B5C47000DFD137 /* TEAMTests.xctest */,
 				AE0EA8A926B5C47000DFD137 /* TEAMUITests.xctest */,
 			);
@@ -233,6 +235,7 @@
 		AE0EA88F26B5C46E00DFD137 /* TEAM */ = {
 			isa = PBXGroup;
 			children = (
+				AEA273AC27E657CE0083B20A /* GoogleService-Info.plist */,
 				AE3EBA8F26C86E2C006A48C4 /* TEAM.entitlements */,
 				AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */,
 				AE0EA89026B5C46E00DFD137 /* TEAMApp.swift */,
@@ -320,8 +323,10 @@
 			dependencies = (
 			);
 			name = TEAM;
+			packageProductDependencies = (
+			);
 			productName = TEAM;
-			productReference = AE0EA88D26B5C46E00DFD137 /* TEAM.app */;
+			productReference = AE0EA88D26B5C46E00DFD137 /* TEAM Blue.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AE0EA89D26B5C47000DFD137 /* TEAMTests */ = {
@@ -391,6 +396,9 @@
 				Base,
 			);
 			mainGroup = AE0EA88426B5C46D00DFD137;
+			packageReferences = (
+				AEA273AE27E6B0070083B20A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = AE0EA88E26B5C46E00DFD137 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -408,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE0EA89826B5C47000DFD137 /* Preview Assets.xcassets in Resources */,
+				AEA273AD27E657CF0083B20A /* GoogleService-Info.plist in Resources */,
 				AEA8212527E53DCA00F87765 /* Config.xcconfig in Resources */,
 				AE0EA89526B5C47000DFD137 /* Assets.xcassets in Resources */,
 			);
@@ -596,18 +605,19 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TEAM/TEAM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"TEAM/Preview Content\"";
 				DEVELOPMENT_TEAM = X4L3JSUC6J;
 				ENABLE_PREVIEWS = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Flutter/$(CONFIGURATION)";
 				INFOPLIST_FILE = TEAM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"$(inherited) @executable_path/Frameworks",
+					"$(inherited)",
+					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(MAIN_APP_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(MAIN_APP_DISPLAY_NAME)";
@@ -624,18 +634,19 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TEAM/TEAM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"TEAM/Preview Content\"";
 				DEVELOPMENT_TEAM = X4L3JSUC6J;
 				ENABLE_PREVIEWS = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Flutter/$(CONFIGURATION)";
 				INFOPLIST_FILE = TEAM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"$(inherited) @executable_path/Frameworks",
+					"$(inherited)",
+					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(MAIN_APP_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(MAIN_APP_DISPLAY_NAME)";
@@ -768,6 +779,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AEA273AE27E6B0070083B20A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = AE0EA88526B5C46D00DFD137 /* Project object */;
 }
