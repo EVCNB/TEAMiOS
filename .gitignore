@@ -7,3 +7,4 @@ TEAM.xcworkspace/xcuserdata/
 *.pbxproj.bak
 .DS_Store
 TEAMConfigOverride.xcconfig
+TEAM/GoogleService-Info.plist
