@@ -5,7 +5,7 @@ readonly basedir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 commit="true"
 bundle_name="TEAM"
-display_name="TEAM Blue"
+display_name="TEAM"
 
 while [[ "$#" -gt 0 ]]; do
     opt="$1"
@@ -26,11 +26,6 @@ while [[ "$#" -gt 0 ]]; do
 done
 
 pushd "${basedir}"
-
-
-find Flutter -name 'AppAuth.xcframework' -print0 | xargs -0 rm -rf
-find Flutter -name 'GTMAppAuth.xcframework'  -print0 | xargs -0 rm -rf
-find Flutter -name 'GTMSessionFetcher.xcframework'  -print0 | xargs -0 rm -rf
 
 cat > ./TEAMConfigOverride.xcconfig <<EOXCC
 MAIN_APP_BUNDLE_IDENTIFIER = net.adamcin.${bundle_name}
