@@ -27,6 +27,7 @@ appname() {
 }
 
 app=team
+# handle global arguments
 while [[ "$#" -gt 0 ]]; do
     opt="$1"
     shift
@@ -35,7 +36,8 @@ while [[ "$#" -gt 0 ]]; do
     app="$(appname $1)"
     shift;;
     *)
-    continue;;
+    set -- "$opt" "$@"
+    break;;
     esac
 done
 
@@ -70,6 +72,7 @@ setxcconfig() {
     local app_version
     local display_name
     local build_version
+    local clientid_rev
 
     bundle_id="$(git config -f apps.gitconfig apps.${app}.bundleid)"
     display_name="$(git config -f apps.gitconfig apps.${app}.displayname)"
@@ -81,7 +84,6 @@ MAIN_APP_DISPLAY_NAME = ${display_name}
 EOXCC
 
     plutil -replace CFBundleShortVersionString -string "${app_version}" TEAM/Info.plist
-    # plutil -extract 'CFBundleURLTypes.0.CFBundleURLSchemes' json -o - TEAM/Info.plist | jq -r '.[]' | grep expect reverse org
 
     build_version="$(nextbuildversion "$app")"
     sed -i.bak "s/CURRENT_PROJECT_VERSION = [0-9]*;/CURRENT_PROJECT_VERSION = ${build_version};/" TEAM.xcodeproj/project.pbxproj 
@@ -107,7 +109,8 @@ runxcodebuild() {
         --no-commit)
         commit=false;;
         *)
-        continue;;
+        set -- "$opt" "$@"
+        break;;
         esac
     done
 
