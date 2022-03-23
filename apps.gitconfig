@@ -1,0 +1,11 @@
+[apps "team"]
+	bundleid = net.adamcin.TEAM
+	appversion = 1.0
+	displayname = TEAM
+	sdkconfig = 1:251861649670:ios:e18d11e6963786dd487687
+
+[apps "blueteam"]
+	bundleid = net.adamcin.BlueTEAM
+	appversion = 1.0
+	displayname = TEAM Blue
+	sdkconfig = 1:251861649670:ios:99416e53f2c8a18f487687
