@@ -3,29 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09B044378D1EA3F1A827E773 /* flutter_email_sender.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 2F134A5697D090FFA63FC5B0 /* flutter_email_sender.xcframework */; };
-		0D2344E9939D5507BFBE5CAB /* FlutterPluginRegistrant.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = EF1D42628B11D40564F86D7E /* FlutterPluginRegistrant.xcframework */; };
-		0E5B495896C40BD20CD2F34D /* FirebaseCoreDiagnostics.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = A90F44659479477D74D6C015 /* FirebaseCoreDiagnostics.xcframework */; };
-		224840EE890B28D6FE25B593 /* AppAuth.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = DCE447A7A1CB707072767218 /* AppAuth.xcframework */; };
-		2D324B43A5D0D01F9A9DC63B /* grpcpp.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = CDCA4A808E09CC5DFAE792E6 /* grpcpp.xcframework */; };
-		2D9E4BA09C45CFDE1A20D46C /* GTMSessionFetcher.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 5133421896E939E72224BC8F /* GTMSessionFetcher.xcframework */; };
-		365C4788847BBD8745896102 /* google_sign_in_ios.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 373D42B7B474F67328AB1EE4 /* google_sign_in_ios.xcframework */; };
-		3708440BB0EE7935384B7734 /* FirebaseFirestore.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = ACCC44AF8345F96406E518AB /* FirebaseFirestore.xcframework */; };
-		3C9A4DDC8AE2127D194C4CEB /* cloud_firestore.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 00BC4F82A08197A83223504C /* cloud_firestore.xcframework */; };
-		4A534CEF8FB53BF45AF86E9F /* FirebaseAuth.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 309B48A896DF517D2E499DDC /* FirebaseAuth.xcframework */; };
-		4E9345EEAC830AF2CBCBECBB /* grpc.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = E99643CAB620F172B6072D14 /* grpc.xcframework */; };
-		6B914B51AB8EF4FD8105CF01 /* FirebaseCore.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 438846F28630EE4550B169CB /* FirebaseCore.xcframework */; };
-		6C5C4B80A57616221FE157AB /* firebase_core.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = D4A848D3A917768587ED2D2C /* firebase_core.xcframework */; };
-		91A6402391F17E9E961A0DD0 /* firebase_auth.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 089C44DDA4445447815812FF /* firebase_auth.xcframework */; };
-		91BC4DEF945DB946BFA8450D /* Flutter.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 15DD47FDA3B8B4495E31C7E3 /* Flutter.xcframework */; };
-		92884C5992F3B303414B51FA /* openssl_grpc.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = A82C42CA94FCAB4DAAB1C692 /* openssl_grpc.xcframework */; };
-		936B45BFAE91CB054A519A4A /* GoogleSignIn.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 75B64427AA29A51816DCAE70 /* GoogleSignIn.xcframework */; };
-		95F445A593BD0B4646A32CC5 /* GoogleUtilities.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 460D4956B34F2E50A39C675C /* GoogleUtilities.xcframework */; };
-		9D224D3EA72B826CD0B9D890 /* leveldb.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 2FF44034A8BE6211B5AE7D4E /* leveldb.xcframework */; };
+		AE008E5D283EDFA80013E2C5 /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE447A7A1CB707072767218 /* AppAuth.xcframework */; };
+		AE008E5E283EDFA80013E2C5 /* AppAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCE447A7A1CB707072767218 /* AppAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E60283EDFCF0013E2C5 /* absl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FB4C708F9BEA60959A739E /* absl.xcframework */; };
+		AE008E61283EDFCF0013E2C5 /* absl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32FB4C708F9BEA60959A739E /* absl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E62283EDFCF0013E2C5 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB142C2A1664963C95FB15F /* App.xcframework */; };
+		AE008E63283EDFCF0013E2C5 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEB142C2A1664963C95FB15F /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E64283EDFDD0013E2C5 /* cloud_firestore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BC4F82A08197A83223504C /* cloud_firestore.xcframework */; };
+		AE008E66283EDFDD0013E2C5 /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655841E6A031BE15A30F170E /* FBLPromises.xcframework */; };
+		AE008E67283EDFDD0013E2C5 /* FBLPromises.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 655841E6A031BE15A30F170E /* FBLPromises.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E68283EDFDD0013E2C5 /* firebase_auth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C44DDA4445447815812FF /* firebase_auth.xcframework */; };
+		AE008E6A283EDFDD0013E2C5 /* firebase_core.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A848D3A917768587ED2D2C /* firebase_core.xcframework */; };
+		AE008E6C283EDFDD0013E2C5 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309B48A896DF517D2E499DDC /* FirebaseAuth.xcframework */; };
+		AE008E6D283EDFDD0013E2C5 /* FirebaseAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 309B48A896DF517D2E499DDC /* FirebaseAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E6E283EDFDD0013E2C5 /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438846F28630EE4550B169CB /* FirebaseCore.xcframework */; };
+		AE008E6F283EDFDD0013E2C5 /* FirebaseCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 438846F28630EE4550B169CB /* FirebaseCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E70283EDFDD0013E2C5 /* FirebaseCoreDiagnostics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90F44659479477D74D6C015 /* FirebaseCoreDiagnostics.xcframework */; };
+		AE008E71283EDFDD0013E2C5 /* FirebaseCoreDiagnostics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A90F44659479477D74D6C015 /* FirebaseCoreDiagnostics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E72283EDFDD0013E2C5 /* FirebaseFirestore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC44AF8345F96406E518AB /* FirebaseFirestore.xcframework */; };
+		AE008E73283EDFDD0013E2C5 /* FirebaseFirestore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC44AF8345F96406E518AB /* FirebaseFirestore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E74283EDFDD0013E2C5 /* flutter_email_sender.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F134A5697D090FFA63FC5B0 /* flutter_email_sender.xcframework */; };
+		AE008E75283EDFDD0013E2C5 /* flutter_email_sender.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F134A5697D090FFA63FC5B0 /* flutter_email_sender.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E76283EDFDD0013E2C5 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DD47FDA3B8B4495E31C7E3 /* Flutter.xcframework */; };
+		AE008E77283EDFDD0013E2C5 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15DD47FDA3B8B4495E31C7E3 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E78283EDFDD0013E2C5 /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1D42628B11D40564F86D7E /* FlutterPluginRegistrant.xcframework */; };
+		AE008E7A283EDFDD0013E2C5 /* google_sign_in_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373D42B7B474F67328AB1EE4 /* google_sign_in_ios.xcframework */; };
+		AE008E7C283EDFDD0013E2C5 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34364916B828AE581207E9BD /* GoogleDataTransport.xcframework */; };
+		AE008E7D283EDFDD0013E2C5 /* GoogleDataTransport.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34364916B828AE581207E9BD /* GoogleDataTransport.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E7E283EDFDD0013E2C5 /* GoogleSignIn.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B64427AA29A51816DCAE70 /* GoogleSignIn.xcframework */; };
+		AE008E7F283EDFDD0013E2C5 /* GoogleSignIn.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75B64427AA29A51816DCAE70 /* GoogleSignIn.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E80283EDFDD0013E2C5 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460D4956B34F2E50A39C675C /* GoogleUtilities.xcframework */; };
+		AE008E81283EDFDD0013E2C5 /* GoogleUtilities.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 460D4956B34F2E50A39C675C /* GoogleUtilities.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E82283EDFDD0013E2C5 /* grpc.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99643CAB620F172B6072D14 /* grpc.xcframework */; };
+		AE008E83283EDFDD0013E2C5 /* grpc.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E99643CAB620F172B6072D14 /* grpc.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E84283EDFDD0013E2C5 /* grpcpp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCA4A808E09CC5DFAE792E6 /* grpcpp.xcframework */; };
+		AE008E85283EDFDD0013E2C5 /* grpcpp.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDCA4A808E09CC5DFAE792E6 /* grpcpp.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E86283EDFDD0013E2C5 /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6403498F9234F60B27C6BD35 /* GTMAppAuth.xcframework */; };
+		AE008E87283EDFDD0013E2C5 /* GTMAppAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6403498F9234F60B27C6BD35 /* GTMAppAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E88283EDFDD0013E2C5 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5133421896E939E72224BC8F /* GTMSessionFetcher.xcframework */; };
+		AE008E89283EDFDD0013E2C5 /* GTMSessionFetcher.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5133421896E939E72224BC8F /* GTMSessionFetcher.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E8A283EDFDD0013E2C5 /* leveldb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF44034A8BE6211B5AE7D4E /* leveldb.xcframework */; };
+		AE008E8B283EDFDD0013E2C5 /* leveldb.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF44034A8BE6211B5AE7D4E /* leveldb.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E8C283EDFDD0013E2C5 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF54B39B530EAC8FDD62A0A /* nanopb.xcframework */; };
+		AE008E8D283EDFDD0013E2C5 /* nanopb.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF54B39B530EAC8FDD62A0A /* nanopb.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE008E8E283EDFDD0013E2C5 /* openssl_grpc.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82C42CA94FCAB4DAAB1C692 /* openssl_grpc.xcframework */; };
+		AE008E8F283EDFDD0013E2C5 /* openssl_grpc.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A82C42CA94FCAB4DAAB1C692 /* openssl_grpc.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE0EA89126B5C46E00DFD137 /* TEAMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA89026B5C46E00DFD137 /* TEAMApp.swift */; };
 		AE0EA89526B5C47000DFD137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA89426B5C47000DFD137 /* Assets.xcassets */; };
 		AE0EA89826B5C47000DFD137 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA89726B5C47000DFD137 /* Preview Assets.xcassets */; };
@@ -34,15 +60,6 @@
 		AE0EA8CA26B5D43100DFD137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8C926B5D43100DFD137 /* AppDelegate.swift */; };
 		AE0EA8D226B5DF3A00DFD137 /* FlutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA8D126B5DF3A00DFD137 /* FlutterView.swift */; };
 		AEA273AD27E657CF0083B20A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEA273AC27E657CE0083B20A /* GoogleService-Info.plist */; };
-		AEA273B427E90B7A0083B20A /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AEA273B127E90B7A0083B20A /* Release.xcconfig */; };
-		AEA273B527E90B7A0083B20A /* TEAMConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AEA273B227E90B7A0083B20A /* TEAMConfig.xcconfig */; };
-		AEA273B627E90B7A0083B20A /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AEA273B327E90B7A0083B20A /* Debug.xcconfig */; };
-		BE5A448C9DF2453C50736EE2 /* FBLPromises.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 655841E6A031BE15A30F170E /* FBLPromises.xcframework */; };
-		C26E4576A92A7DE536D64063 /* App.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = EEB142C2A1664963C95FB15F /* App.xcframework */; };
-		CCBF4F7FBC53D4D93AEDE503 /* nanopb.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 0CF54B39B530EAC8FDD62A0A /* nanopb.xcframework */; };
-		DD364207AE11296BDFB5F5FE /* absl.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 32FB4C708F9BEA60959A739E /* absl.xcframework */; };
-		E0FF42029946936F246F1DFB /* GTMAppAuth.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 6403498F9234F60B27C6BD35 /* GTMAppAuth.xcframework */; };
-		F1824652B4D11B1DEA0AF69B /* GoogleDataTransport.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 34364916B828AE581207E9BD /* GoogleDataTransport.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,26 +79,59 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AE008E5F283EDFA80013E2C5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE008E87283EDFDD0013E2C5 /* GTMAppAuth.xcframework in Embed Frameworks */,
+				AE008E5E283EDFA80013E2C5 /* AppAuth.xcframework in Embed Frameworks */,
+				AE008E6D283EDFDD0013E2C5 /* FirebaseAuth.xcframework in Embed Frameworks */,
+				AE008E61283EDFCF0013E2C5 /* absl.xcframework in Embed Frameworks */,
+				AE008E75283EDFDD0013E2C5 /* flutter_email_sender.xcframework in Embed Frameworks */,
+				AE008E83283EDFDD0013E2C5 /* grpc.xcframework in Embed Frameworks */,
+				AE008E8B283EDFDD0013E2C5 /* leveldb.xcframework in Embed Frameworks */,
+				AE008E81283EDFDD0013E2C5 /* GoogleUtilities.xcframework in Embed Frameworks */,
+				AE008E6F283EDFDD0013E2C5 /* FirebaseCore.xcframework in Embed Frameworks */,
+				AE008E63283EDFCF0013E2C5 /* App.xcframework in Embed Frameworks */,
+				AE008E7F283EDFDD0013E2C5 /* GoogleSignIn.xcframework in Embed Frameworks */,
+				AE008E89283EDFDD0013E2C5 /* GTMSessionFetcher.xcframework in Embed Frameworks */,
+				AE008E8D283EDFDD0013E2C5 /* nanopb.xcframework in Embed Frameworks */,
+				AE008E71283EDFDD0013E2C5 /* FirebaseCoreDiagnostics.xcframework in Embed Frameworks */,
+				AE008E8F283EDFDD0013E2C5 /* openssl_grpc.xcframework in Embed Frameworks */,
+				AE008E7D283EDFDD0013E2C5 /* GoogleDataTransport.xcframework in Embed Frameworks */,
+				AE008E67283EDFDD0013E2C5 /* FBLPromises.xcframework in Embed Frameworks */,
+				AE008E73283EDFDD0013E2C5 /* FirebaseFirestore.xcframework in Embed Frameworks */,
+				AE008E85283EDFDD0013E2C5 /* grpcpp.xcframework in Embed Frameworks */,
+				AE008E77283EDFDD0013E2C5 /* Flutter.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		00BC4F82A08197A83223504C /* cloud_firestore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = cloud_firestore.xcframework; path = Flutter/Release/cloud_firestore.xcframework; sourceTree = SOURCE_ROOT; };
-		089C44DDA4445447815812FF /* firebase_auth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = firebase_auth.xcframework; path = Flutter/Release/firebase_auth.xcframework; sourceTree = SOURCE_ROOT; };
-		0CF54B39B530EAC8FDD62A0A /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = nanopb.xcframework; path = Flutter/Release/nanopb.xcframework; sourceTree = SOURCE_ROOT; };
-		15DD47FDA3B8B4495E31C7E3 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Flutter.xcframework; path = Flutter/Release/Flutter.xcframework; sourceTree = SOURCE_ROOT; };
-		2F134A5697D090FFA63FC5B0 /* flutter_email_sender.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = flutter_email_sender.xcframework; path = Flutter/Release/flutter_email_sender.xcframework; sourceTree = SOURCE_ROOT; };
-		2FF44034A8BE6211B5AE7D4E /* leveldb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = leveldb.xcframework; path = Flutter/Release/leveldb.xcframework; sourceTree = SOURCE_ROOT; };
-		309B48A896DF517D2E499DDC /* FirebaseAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FirebaseAuth.xcframework; path = Flutter/Release/FirebaseAuth.xcframework; sourceTree = SOURCE_ROOT; };
-		32FB4C708F9BEA60959A739E /* absl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = absl.xcframework; path = Flutter/Release/absl.xcframework; sourceTree = SOURCE_ROOT; };
-		34364916B828AE581207E9BD /* GoogleDataTransport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GoogleDataTransport.xcframework; path = Flutter/Release/GoogleDataTransport.xcframework; sourceTree = SOURCE_ROOT; };
-		373D42B7B474F67328AB1EE4 /* google_sign_in_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = google_sign_in_ios.xcframework; path = Flutter/Release/google_sign_in_ios.xcframework; sourceTree = SOURCE_ROOT; };
-		438846F28630EE4550B169CB /* FirebaseCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FirebaseCore.xcframework; path = Flutter/Release/FirebaseCore.xcframework; sourceTree = SOURCE_ROOT; };
-		460D4956B34F2E50A39C675C /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GoogleUtilities.xcframework; path = Flutter/Release/GoogleUtilities.xcframework; sourceTree = SOURCE_ROOT; };
-		5133421896E939E72224BC8F /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GTMSessionFetcher.xcframework; path = Flutter/Release/GTMSessionFetcher.xcframework; sourceTree = SOURCE_ROOT; };
-		6403498F9234F60B27C6BD35 /* GTMAppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GTMAppAuth.xcframework; path = Flutter/Release/GTMAppAuth.xcframework; sourceTree = SOURCE_ROOT; };
-		655841E6A031BE15A30F170E /* FBLPromises.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FBLPromises.xcframework; path = Flutter/Release/FBLPromises.xcframework; sourceTree = SOURCE_ROOT; };
-		75B64427AA29A51816DCAE70 /* GoogleSignIn.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GoogleSignIn.xcframework; path = Flutter/Release/GoogleSignIn.xcframework; sourceTree = SOURCE_ROOT; };
-		A82C42CA94FCAB4DAAB1C692 /* openssl_grpc.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = openssl_grpc.xcframework; path = Flutter/Release/openssl_grpc.xcframework; sourceTree = SOURCE_ROOT; };
-		A90F44659479477D74D6C015 /* FirebaseCoreDiagnostics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FirebaseCoreDiagnostics.xcframework; path = Flutter/Release/FirebaseCoreDiagnostics.xcframework; sourceTree = SOURCE_ROOT; };
-		ACCC44AF8345F96406E518AB /* FirebaseFirestore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FirebaseFirestore.xcframework; path = Flutter/Release/FirebaseFirestore.xcframework; sourceTree = SOURCE_ROOT; };
+		00BC4F82A08197A83223504C /* cloud_firestore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = cloud_firestore.xcframework; path = Flutter/Release/cloud_firestore.xcframework; sourceTree = SOURCE_ROOT; };
+		089C44DDA4445447815812FF /* firebase_auth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = firebase_auth.xcframework; path = Flutter/Release/firebase_auth.xcframework; sourceTree = SOURCE_ROOT; };
+		0CF54B39B530EAC8FDD62A0A /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = Flutter/Release/nanopb.xcframework; sourceTree = SOURCE_ROOT; };
+		15DD47FDA3B8B4495E31C7E3 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = Flutter/Release/Flutter.xcframework; sourceTree = SOURCE_ROOT; };
+		2F134A5697D090FFA63FC5B0 /* flutter_email_sender.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = flutter_email_sender.xcframework; path = Flutter/Release/flutter_email_sender.xcframework; sourceTree = SOURCE_ROOT; };
+		2FF44034A8BE6211B5AE7D4E /* leveldb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = leveldb.xcframework; path = Flutter/Release/leveldb.xcframework; sourceTree = SOURCE_ROOT; };
+		309B48A896DF517D2E499DDC /* FirebaseAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAuth.xcframework; path = Flutter/Release/FirebaseAuth.xcframework; sourceTree = SOURCE_ROOT; };
+		32FB4C708F9BEA60959A739E /* absl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = absl.xcframework; path = Flutter/Release/absl.xcframework; sourceTree = SOURCE_ROOT; };
+		34364916B828AE581207E9BD /* GoogleDataTransport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleDataTransport.xcframework; path = Flutter/Release/GoogleDataTransport.xcframework; sourceTree = SOURCE_ROOT; };
+		373D42B7B474F67328AB1EE4 /* google_sign_in_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = google_sign_in_ios.xcframework; path = Flutter/Release/google_sign_in_ios.xcframework; sourceTree = SOURCE_ROOT; };
+		438846F28630EE4550B169CB /* FirebaseCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseCore.xcframework; path = Flutter/Release/FirebaseCore.xcframework; sourceTree = SOURCE_ROOT; };
+		460D4956B34F2E50A39C675C /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = Flutter/Release/GoogleUtilities.xcframework; sourceTree = SOURCE_ROOT; };
+		5133421896E939E72224BC8F /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GTMSessionFetcher.xcframework; path = Flutter/Release/GTMSessionFetcher.xcframework; sourceTree = SOURCE_ROOT; };
+		6403498F9234F60B27C6BD35 /* GTMAppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GTMAppAuth.xcframework; path = Flutter/Release/GTMAppAuth.xcframework; sourceTree = SOURCE_ROOT; };
+		655841E6A031BE15A30F170E /* FBLPromises.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBLPromises.xcframework; path = Flutter/Release/FBLPromises.xcframework; sourceTree = SOURCE_ROOT; };
+		75B64427AA29A51816DCAE70 /* GoogleSignIn.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleSignIn.xcframework; path = Flutter/Release/GoogleSignIn.xcframework; sourceTree = SOURCE_ROOT; };
+		A82C42CA94FCAB4DAAB1C692 /* openssl_grpc.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = openssl_grpc.xcframework; path = Flutter/Release/openssl_grpc.xcframework; sourceTree = SOURCE_ROOT; };
+		A90F44659479477D74D6C015 /* FirebaseCoreDiagnostics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseCoreDiagnostics.xcframework; path = Flutter/Release/FirebaseCoreDiagnostics.xcframework; sourceTree = SOURCE_ROOT; };
+		ACCC44AF8345F96406E518AB /* FirebaseFirestore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseFirestore.xcframework; path = Flutter/Release/FirebaseFirestore.xcframework; sourceTree = SOURCE_ROOT; };
 		AE0EA88D26B5C46E00DFD137 /* TEAM Blue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TEAM Blue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0EA89026B5C46E00DFD137 /* TEAMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEAMApp.swift; sourceTree = "<group>"; };
 		AE0EA89426B5C47000DFD137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,12 +150,12 @@
 		AEA273B127E90B7A0083B20A /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		AEA273B227E90B7A0083B20A /* TEAMConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = TEAMConfig.xcconfig; sourceTree = "<group>"; };
 		AEA273B327E90B7A0083B20A /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		CDCA4A808E09CC5DFAE792E6 /* grpcpp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = grpcpp.xcframework; path = Flutter/Release/grpcpp.xcframework; sourceTree = SOURCE_ROOT; };
-		D4A848D3A917768587ED2D2C /* firebase_core.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = firebase_core.xcframework; path = Flutter/Release/firebase_core.xcframework; sourceTree = SOURCE_ROOT; };
-		DCE447A7A1CB707072767218 /* AppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppAuth.xcframework; path = Flutter/Release/AppAuth.xcframework; sourceTree = SOURCE_ROOT; };
-		E99643CAB620F172B6072D14 /* grpc.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = grpc.xcframework; path = Flutter/Release/grpc.xcframework; sourceTree = SOURCE_ROOT; };
-		EEB142C2A1664963C95FB15F /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = App.xcframework; path = Flutter/Release/App.xcframework; sourceTree = SOURCE_ROOT; };
-		EF1D42628B11D40564F86D7E /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FlutterPluginRegistrant.xcframework; path = Flutter/Release/FlutterPluginRegistrant.xcframework; sourceTree = SOURCE_ROOT; };
+		CDCA4A808E09CC5DFAE792E6 /* grpcpp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = grpcpp.xcframework; path = Flutter/Release/grpcpp.xcframework; sourceTree = SOURCE_ROOT; };
+		D4A848D3A917768587ED2D2C /* firebase_core.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = firebase_core.xcframework; path = Flutter/Release/firebase_core.xcframework; sourceTree = SOURCE_ROOT; };
+		DCE447A7A1CB707072767218 /* AppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AppAuth.xcframework; path = Flutter/Release/AppAuth.xcframework; sourceTree = SOURCE_ROOT; };
+		E99643CAB620F172B6072D14 /* grpc.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = grpc.xcframework; path = Flutter/Release/grpc.xcframework; sourceTree = SOURCE_ROOT; };
+		EEB142C2A1664963C95FB15F /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Flutter/Release/App.xcframework; sourceTree = SOURCE_ROOT; };
+		EF1D42628B11D40564F86D7E /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = Flutter/Release/FlutterPluginRegistrant.xcframework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +163,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE008E86283EDFDD0013E2C5 /* GTMAppAuth.xcframework in Frameworks */,
+				AE008E6A283EDFDD0013E2C5 /* firebase_core.xcframework in Frameworks */,
+				AE008E5D283EDFA80013E2C5 /* AppAuth.xcframework in Frameworks */,
+				AE008E6C283EDFDD0013E2C5 /* FirebaseAuth.xcframework in Frameworks */,
+				AE008E60283EDFCF0013E2C5 /* absl.xcframework in Frameworks */,
+				AE008E74283EDFDD0013E2C5 /* flutter_email_sender.xcframework in Frameworks */,
+				AE008E82283EDFDD0013E2C5 /* grpc.xcframework in Frameworks */,
+				AE008E8A283EDFDD0013E2C5 /* leveldb.xcframework in Frameworks */,
+				AE008E80283EDFDD0013E2C5 /* GoogleUtilities.xcframework in Frameworks */,
+				AE008E6E283EDFDD0013E2C5 /* FirebaseCore.xcframework in Frameworks */,
+				AE008E78283EDFDD0013E2C5 /* FlutterPluginRegistrant.xcframework in Frameworks */,
+				AE008E62283EDFCF0013E2C5 /* App.xcframework in Frameworks */,
+				AE008E7E283EDFDD0013E2C5 /* GoogleSignIn.xcframework in Frameworks */,
+				AE008E7A283EDFDD0013E2C5 /* google_sign_in_ios.xcframework in Frameworks */,
+				AE008E88283EDFDD0013E2C5 /* GTMSessionFetcher.xcframework in Frameworks */,
+				AE008E8C283EDFDD0013E2C5 /* nanopb.xcframework in Frameworks */,
+				AE008E70283EDFDD0013E2C5 /* FirebaseCoreDiagnostics.xcframework in Frameworks */,
+				AE008E8E283EDFDD0013E2C5 /* openssl_grpc.xcframework in Frameworks */,
+				AE008E7C283EDFDD0013E2C5 /* GoogleDataTransport.xcframework in Frameworks */,
+				AE008E66283EDFDD0013E2C5 /* FBLPromises.xcframework in Frameworks */,
+				AE008E72283EDFDD0013E2C5 /* FirebaseFirestore.xcframework in Frameworks */,
+				AE008E68283EDFDD0013E2C5 /* firebase_auth.xcframework in Frameworks */,
+				AE008E84283EDFDD0013E2C5 /* grpcpp.xcframework in Frameworks */,
+				AE008E76283EDFDD0013E2C5 /* Flutter.xcframework in Frameworks */,
+				AE008E64283EDFDD0013E2C5 /* cloud_firestore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +323,7 @@
 				AE0EA88926B5C46D00DFD137 /* Sources */,
 				AE0EA88A26B5C46D00DFD137 /* Frameworks */,
 				AE0EA88B26B5C46D00DFD137 /* Resources */,
+				AE008E5F283EDFA80013E2C5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,7 +377,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					AE0EA88C26B5C46D00DFD137 = {
 						CreatedOnToolsVersion = 12.3;
@@ -341,37 +417,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEA273B627E90B7A0083B20A /* Debug.xcconfig in Resources */,
-				AEA273B427E90B7A0083B20A /* Release.xcconfig in Resources */,
 				AE0EA89826B5C47000DFD137 /* Preview Assets.xcassets in Resources */,
 				AEA273AD27E657CF0083B20A /* GoogleService-Info.plist in Resources */,
 				AE0EA89526B5C47000DFD137 /* Assets.xcassets in Resources */,
-				AEA273B527E90B7A0083B20A /* TEAMConfig.xcconfig in Resources */,
-				224840EE890B28D6FE25B593 /* AppAuth.xcframework in Resources */,
-				E0FF42029946936F246F1DFB /* GTMAppAuth.xcframework in Resources */,
-				2D9E4BA09C45CFDE1A20D46C /* GTMSessionFetcher.xcframework in Resources */,
-				936B45BFAE91CB054A519A4A /* GoogleSignIn.xcframework in Resources */,
-				365C4788847BBD8745896102 /* google_sign_in_ios.xcframework in Resources */,
-				C26E4576A92A7DE536D64063 /* App.xcframework in Resources */,
-				BE5A448C9DF2453C50736EE2 /* FBLPromises.xcframework in Resources */,
-				4A534CEF8FB53BF45AF86E9F /* FirebaseAuth.xcframework in Resources */,
-				6B914B51AB8EF4FD8105CF01 /* FirebaseCore.xcframework in Resources */,
-				0E5B495896C40BD20CD2F34D /* FirebaseCoreDiagnostics.xcframework in Resources */,
-				3708440BB0EE7935384B7734 /* FirebaseFirestore.xcframework in Resources */,
-				91BC4DEF945DB946BFA8450D /* Flutter.xcframework in Resources */,
-				0D2344E9939D5507BFBE5CAB /* FlutterPluginRegistrant.xcframework in Resources */,
-				F1824652B4D11B1DEA0AF69B /* GoogleDataTransport.xcframework in Resources */,
-				95F445A593BD0B4646A32CC5 /* GoogleUtilities.xcframework in Resources */,
-				DD364207AE11296BDFB5F5FE /* absl.xcframework in Resources */,
-				3C9A4DDC8AE2127D194C4CEB /* cloud_firestore.xcframework in Resources */,
-				91A6402391F17E9E961A0DD0 /* firebase_auth.xcframework in Resources */,
-				6C5C4B80A57616221FE157AB /* firebase_core.xcframework in Resources */,
-				09B044378D1EA3F1A827E773 /* flutter_email_sender.xcframework in Resources */,
-				4E9345EEAC830AF2CBCBECBB /* grpc.xcframework in Resources */,
-				2D324B43A5D0D01F9A9DC63B /* grpcpp.xcframework in Resources */,
-				9D224D3EA72B826CD0B9D890 /* leveldb.xcframework in Resources */,
-				CCBF4F7FBC53D4D93AEDE503 /* nanopb.xcframework in Resources */,
-				92884C5992F3B303414B51FA /* openssl_grpc.xcframework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
