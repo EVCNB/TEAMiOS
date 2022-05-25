@@ -117,7 +117,7 @@ runxcodebuild() {
     bundle_id="$(git config -f apps.gitconfig apps.${app}.bundleid)"
     app_version="$(git config -f apps.gitconfig apps.${app}.appversion)"
 
-    xcodebuild -workspace TEAM.xcworkspace -scheme TEAM -sdk iphoneos -configuration Release archive -archivePath "${basedir}/build/TEAM.xcarchive" -allowProvisioningUpdates
+    xcodebuild -project TEAM.xcodeproj -scheme TEAM -sdk iphoneos -configuration Release archive -archivePath "${basedir}/build/TEAM.xcarchive" -allowProvisioningUpdates
     xcodebuild -exportArchive -archivePath "${basedir}/build/TEAM.xcarchive" -exportOptionsPlist exportOptions.plist -exportPath "${basedir}/build" -allowProvisioningUpdates
 
     build_version="$(nextbuildversion "$app")"
