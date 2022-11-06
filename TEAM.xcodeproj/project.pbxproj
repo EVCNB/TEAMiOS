@@ -132,7 +132,7 @@
 		A82C42CA94FCAB4DAAB1C692 /* openssl_grpc.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = openssl_grpc.xcframework; path = Flutter/Release/openssl_grpc.xcframework; sourceTree = SOURCE_ROOT; };
 		A90F44659479477D74D6C015 /* FirebaseCoreDiagnostics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseCoreDiagnostics.xcframework; path = Flutter/Release/FirebaseCoreDiagnostics.xcframework; sourceTree = SOURCE_ROOT; };
 		ACCC44AF8345F96406E518AB /* FirebaseFirestore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseFirestore.xcframework; path = Flutter/Release/FirebaseFirestore.xcframework; sourceTree = SOURCE_ROOT; };
-		AE0EA88D26B5C46E00DFD137 /* TEAM Blue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TEAM Blue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0EA88D26B5C46E00DFD137 /* TEAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0EA89026B5C46E00DFD137 /* TEAMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEAMApp.swift; sourceTree = "<group>"; };
 		AE0EA89426B5C47000DFD137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE0EA89726B5C47000DFD137 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -223,7 +223,7 @@
 		AE0EA88E26B5C46E00DFD137 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE0EA88D26B5C46E00DFD137 /* TEAM Blue.app */,
+				AE0EA88D26B5C46E00DFD137 /* TEAM.app */,
 				AE0EA89E26B5C47000DFD137 /* TEAMTests.xctest */,
 				AE0EA8A926B5C47000DFD137 /* TEAMUITests.xctest */,
 			);
@@ -331,7 +331,7 @@
 			);
 			name = TEAM;
 			productName = TEAM;
-			productReference = AE0EA88D26B5C46E00DFD137 /* TEAM Blue.app */;
+			productReference = AE0EA88D26B5C46E00DFD137 /* TEAM.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AE0EA89D26B5C47000DFD137 /* TEAMTests */ = {
@@ -606,7 +606,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TEAM/TEAM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 36;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"TEAM/Preview Content\"";
 				DEVELOPMENT_TEAM = X4L3JSUC6J;
 				ENABLE_PREVIEWS = YES;
@@ -616,7 +616,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = TEAM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -638,7 +638,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TEAM/TEAM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 36;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"TEAM/Preview Content\"";
 				DEVELOPMENT_TEAM = X4L3JSUC6J;
 				ENABLE_PREVIEWS = YES;
@@ -648,7 +648,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = TEAM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -670,7 +670,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4L3JSUC6J;
 				INFOPLIST_FILE = TEAMTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -692,7 +692,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4L3JSUC6J;
 				INFOPLIST_FILE = TEAMTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
