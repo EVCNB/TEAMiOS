@@ -69,7 +69,6 @@ setfirebaseinfo() {
 
 setxcconfig() {
     local bundle_id; bundle_id="$(git config -f apps.gitconfig apps.${app}.bundleid)"
-    local bundle_id_prefix; bundle_id="$(git config -f apps.gitconfig apps.${app}.bundleidprefix)"
     local devteam; devteam="$(git config -f apps.gitconfig apps.${app}.devteam)"
     local app_version; app_version="$(git config -f apps.gitconfig apps.${app}.appversion)"
     local display_name; display_name="$(git config -f apps.gitconfig apps.${app}.displayname)"
@@ -81,7 +80,6 @@ setxcconfig() {
 MAIN_APP_BUNDLE_IDENTIFIER = ${bundle_id}
 MAIN_APP_DISPLAY_NAME = ${display_name}
 CONF_DEVELOPMENT_TEAM = ${devteam}
-BUNDLE_ID_PREFIX = ${bundle_id_prefix}
 EOXCC
 
     plutil -replace CFBundleShortVersionString -string "${app_version}" TEAM/Info.plist
