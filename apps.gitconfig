@@ -1,5 +1,6 @@
 [apps "prod"]
 	bundleid = org.evcnb.TEAM
+	bundleidprefix = org.evcnb
 	devteam = J4SCBX5RM2
 	appversion = 1.0
 	displayname = EVCNB TEAM
@@ -7,6 +8,7 @@
 
 [apps "team"]
 	bundleid = net.adamcin.TEAM
+	bundleidprefix = net.adamcin
 	devteam = X4L3JSUC6J
 	appversion = 1.0
 	displayname = TEAM Beta
@@ -14,6 +16,7 @@
 
 [apps "blueteam"]
 	bundleid = net.adamcin.BlueTEAM
+	bundleidprefix = net.adamcin
 	devteam = X4L3JSUC6J
 	appversion = 1.0
 	displayname = TEAM Blue

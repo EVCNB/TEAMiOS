@@ -9,5 +9,6 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 MAIN_APP_DISPLAY_NAME = TEAM
 MAIN_APP_BUNDLE_IDENTIFIER = net.adamcin.TEAM
-DEVELOPMENT_TEAM = X4L3JSUC6J
+CONF_DEVELOPMENT_TEAM = X4L3JSUC6J
+BUNDLE_ID_PREFIX = net.adamcin
 #include? "../TEAMConfigOverride.xcconfig"
