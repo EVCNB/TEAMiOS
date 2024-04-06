@@ -3,7 +3,7 @@
 	bundleidprefix = org.evcnb
 	devteam = J4SCBX5RM2
 	appversion = 1.0
-	displayname = EVCNB TEAM
+	displayname = EVCANA
 	sdkconfig = 1:251861649670:ios:d711797329c71434487687
 
 [apps "team"]
@@ -11,7 +11,7 @@
 	bundleidprefix = net.adamcin
 	devteam = X4L3JSUC6J
 	appversion = 1.0
-	displayname = TEAM Beta
+	displayname = EVCANA Beta
 	sdkconfig = 1:251861649670:ios:e18d11e6963786dd487687
 
 [apps "blueteam"]
@@ -19,5 +19,5 @@
 	bundleidprefix = net.adamcin
 	devteam = X4L3JSUC6J
 	appversion = 1.0
-	displayname = TEAM Blue
+	displayname = EVCANA Blue
 	sdkconfig = 1:251861649670:ios:99416e53f2c8a18f487687

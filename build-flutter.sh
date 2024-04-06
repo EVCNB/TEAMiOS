@@ -72,7 +72,7 @@ is_embeddable() {
     fmwk="${xcfmwk}/${fmwkRelPath}"
     fexe="${fmwk}/$(plutil -convert json -o - -r "${fmwk}/Info.plist" | jq -r '.CFBundleExecutable' | head -n 1)"
     if file -bI "$fexe" | grep -q 'application/x-archive'; then
-      exit 1
+      return 1
     fi
   done
 
