@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -120,7 +120,7 @@
 		04CF48CFA7B547ADE2A95EDA /* RecaptchaInterop.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RecaptchaInterop.xcframework; path = Flutter/Release/RecaptchaInterop.xcframework; sourceTree = SOURCE_ROOT; };
 		089C44DDA4445447815812FF /* firebase_auth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = firebase_auth.xcframework; path = Flutter/Release/firebase_auth.xcframework; sourceTree = SOURCE_ROOT; };
 		0CF54B39B530EAC8FDD62A0A /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = Flutter/Release/nanopb.xcframework; sourceTree = SOURCE_ROOT; };
-		15DD47FDA3B8B4495E31C7E3 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = Flutter/Release/Flutter.xcframework; sourceTree = SOURCE_ROOT; };
+		15DD47FDA3B8B4495E31C7E3 /* Flutter.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:S8QB4VV633:FLUTTER.IO LLC"; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = Flutter/Release/Flutter.xcframework; sourceTree = SOURCE_ROOT; };
 		1FF344F29A21E4911267FAD4 /* FirebaseCoreInternal.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseCoreInternal.xcframework; path = Flutter/Release/FirebaseCoreInternal.xcframework; sourceTree = SOURCE_ROOT; };
 		2F134A5697D090FFA63FC5B0 /* flutter_email_sender.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = flutter_email_sender.xcframework; path = Flutter/Release/flutter_email_sender.xcframework; sourceTree = SOURCE_ROOT; };
 		2FF44034A8BE6211B5AE7D4E /* leveldb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = leveldb.xcframework; path = Flutter/Release/leveldb.xcframework; sourceTree = SOURCE_ROOT; };
@@ -135,7 +135,7 @@
 		75B64427AA29A51816DCAE70 /* GoogleSignIn.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleSignIn.xcframework; path = Flutter/Release/GoogleSignIn.xcframework; sourceTree = SOURCE_ROOT; };
 		A82C42CA94FCAB4DAAB1C692 /* openssl_grpc.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = openssl_grpc.xcframework; path = Flutter/Release/openssl_grpc.xcframework; sourceTree = SOURCE_ROOT; };
 		ACCC44AF8345F96406E518AB /* FirebaseFirestore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseFirestore.xcframework; path = Flutter/Release/FirebaseFirestore.xcframework; sourceTree = SOURCE_ROOT; };
-		AE0EA88D26B5C46E00DFD137 /* TEAM Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TEAM Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0EA88D26B5C46E00DFD137 /* TEAM Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "TEAM Beta.app"; path = "TEAM Blue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0EA89026B5C46E00DFD137 /* TEAMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEAMApp.swift; sourceTree = "<group>"; };
 		AE0EA89426B5C47000DFD137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE0EA89726B5C47000DFD137 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -616,7 +616,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TEAM/TEAM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"TEAM/Preview Content\"";
 				DEVELOPMENT_TEAM = X4L3JSUC6J;
 				ENABLE_PREVIEWS = YES;
@@ -650,7 +650,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TEAM/TEAM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"TEAM/Preview Content\"";
 				DEVELOPMENT_TEAM = X4L3JSUC6J;
 				ENABLE_PREVIEWS = YES;
