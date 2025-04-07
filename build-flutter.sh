@@ -16,10 +16,16 @@ projcmd() {
     pyenv exec pip install pbxproj
   fi
   
-  if ! pyenv exec pbxproj "$@" 2>&1 >/dev/null; then
+  if ! pyenv exec pbxproj file "${basedir}/TEAM.xcodeproj" "$@" 2>&1 >/dev/null; then
     exit 0
   fi
 }
+
+# projcmd() {
+#   if ! xcodeproj show --no-ansi | sed -e 's/^\([^- ].*\)$/\1:/' | yq "$@" 2>&1 >/dev/null; then
+#     exit 0
+#   fi
+# }
 
 unlinkframeworks() {
   local config
@@ -31,11 +37,11 @@ unlinkframeworks() {
     -e 's@/Debug/@/'"${config}"'/@g' \
     -e 's@/Profile/@/'"${config}"'/@g' \
     -e 's@/Release/@/'"${config}"'/@g' \
-   | sort -u | xargs -L 1 "$0" projcmd file -D "${basedir}/TEAM.xcodeproj" --parent Frameworks
+   | sort -u | xargs -L 1 "$0" projcmd -D --parent Frameworks
 }
 
 cleanframeworks() {
-
+  cd "${basedir}" && mkdir -p Flutter
   #  -e 's@/Debug/@/$(CONFIGURATION)/@g' \
   unlinkframeworks
   unlinkframeworks Debug
@@ -86,11 +92,11 @@ linkframework() {
   if find Flutter -name "${fwname}" -print0 | xargs -0 "$0" is_embeddable; then
     echo "linking -s ${fwname}"
     # "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/$(CONFIGURATION)/'"${fwname}" --target TEAM --parent Frameworks -s
-    "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/Release/'"${fwname}" --target TEAM --parent Frameworks -s || echo "failed to link -s ${fwname}"
+    "$0" projcmd 'Flutter/Release/'"${fwname}" --target TEAM --parent Frameworks -s || echo "failed to link -s ${fwname}"
   else
     echo "linking -E ${fwname}"
     # "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/$(CONFIGURATION)/'"${fwname}" --target TEAM --parent Frameworks -E
-    "$0" projcmd file "${basedir}/TEAM.xcodeproj" 'Flutter/Release/'"${fwname}" --target TEAM --parent Frameworks -E || echo "failed to link -E ${fwname}"
+    "$0" projcmd 'Flutter/Release/'"${fwname}" --target TEAM --parent Frameworks -E || echo "failed to link -E ${fwname}"
   fi
 }
 

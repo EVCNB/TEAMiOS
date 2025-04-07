@@ -1,19 +1,46 @@
 # How to build
 
+Building this app is not fun. My opinion on whether or not an app is fun to build is based on some important criteria that this app fails to meet:
+
+1. Dependency versions should be managed in a single git-committed file, or at least 
+
 ## Dependencies
+
+1. XCode
+
+Install XCode from the App Store, and then install the iOS support after opening it.
 
 1. Pyenv
 
-```bash
+```zsh
+brew install openssl@3
 brew install pyenv
 brew install pyenv-virtualenv
-pyenv install 3.9.7
-pyenv virtualenv -f 3.9.7 venv-TEAMiOS
+CONFIGURE_OPTS="--with-openssl=$(brew --prefix openssl@3)" pyenv install 3.9
+pyenv virtualenv -f 3.9 venv-TEAMiOS
 ```
 
-2. Flutter / TEAM
+3. Ruby / Cocoapods
 
-```bash
+add these 2 lines to $HOME/.zshrc:
+
+```zsh
+export GEM_HOME="${HOME}/.gem"
+export PATH="${GEM_HOME}/bin:${PATH}"
+```
+
+```zsh
+brew install ruby-install rbenv
+ruby-install 3.4.1
+rbenv init
+mkdir -p "${HOME}/.rbenv/versions"
+ln -s "${HOME}/.rbenv/versions/ruby-3.4.1" "${HOME}/.rubies/ruby-3.4.1"
+rbenv global 3.4.1
+```
+
+4. Flutter / TEAM
+
+```zsh
 git clone https://github.com/EVCNB/TEAM ../TEAM
 brew install flutter
 ./build-flutter.sh
@@ -23,7 +50,7 @@ brew install flutter
 
 For `TEAM.app`
 
-```bash
+```zsh
 ./upload-ipa.sh
 ```
 
